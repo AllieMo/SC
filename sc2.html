@@ -1,0 +1,77 @@
+<!-- StarCatcher Game for David's Soft Dev class 2015-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StarCatcher - Software Development</title>
+    <div id= "wrapper">
+        <header> 
+            <h1> Star Catcher- Press Space to Start</h1> 
+        </header>
+    </div>
+<!--    our link to the javascript file that will control the game actions -->
+    <script type="text/javascript" src="scScripts2.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!--    out styles will be internal until we need to move them to an external file -->
+    <style type="text/css">
+        html, body {margin: 5px;}
+        canvas {display: block;}
+        #game {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1200px;
+            height: 700px;
+            background-color: lightblue;
+            border-radius: 10px;
+        } 
+
+        header {
+        width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(400,100,120,50);
+        text-align: center;
+        color: black;
+        }
+        .centerText {text-align: center;}
+
+        #sbox {
+            float: right;
+            width: 100px;
+            margin-left: 150px;
+            margin-top: 5px;
+            color: black;
+            font-size: 25px;
+            background-color: rgba(400,100,120,50);
+        }
+
+        #p2 {
+            float: left;
+            width: 100px;
+            margin-right: 150px;
+            margin-top: 5px;
+            color: black;
+            font-size: 25px;
+            background-color: rgba(400,100,120,50);
+        }
+            
+    </style>
+</head>
+<body background= "http://basketballhoopbuyingguide.com/wp-content/uploads/2014/06/Install-Basketball-HoopV2.jpg">
+    <header>
+        <h2>Rebounds Win Games!</h2>
+    </header>
+    <div id="sbox">
+        <h3>P1 Score: <span id="p1ScoreDisp">0</span></h3>
+    </div>
+    <div id="p2">
+        <h3>P2 Score: <span id="p2ScoreDisp">0</span></h3>
+    </div>
+    <div id="timer">
+        <h3>Time: <span id="TimeDisp">0</span></h3>
+    </div>
+    <div id="game">
+        <canvas id="myCanvas"></canvas>
+    </div>
+    
+</body>
+</html>
